@@ -1,0 +1,42 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+@section CustomStyle
+{
+    
+}
+
+@if (ViewBag.SMsg != null)
+{
+    <p>@ViewBag.SMsg</p>
+}
+else
+{
+    <p>@ViewBag.FMsg</p>
+}
+
+<form method="post">
+    <table>
+        <tr>
+            <td>Passport Type</td>
+            <td>
+                <input type="text" name="Name"/>
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <input type="submit" value="Add" class="btn btn-outline-primary mt-3 font-weight-bold"/>
+            </td>
+        </tr>
+    </table>
+
+</form>
+
+
+@section CustomScript
+{
+    
+}
